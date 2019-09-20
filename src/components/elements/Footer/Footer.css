@@ -1,0 +1,16 @@
+.sc-footer {
+  text-align: center;
+  height: 60px;
+  padding: 15px;
+  background: #1f036e;
+  color: #fff;
+  margin-top: 30px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .sc-footer span {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

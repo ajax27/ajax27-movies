@@ -1,0 +1,44 @@
+.sc-grid h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 44px;
+  padding: 20px 0px;
+}
+
+.sc-grid-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  position: relative;
+}
+
+.sc-grid-element {
+  background: #353535;
+  max-height: 430px;
+  animation: animateGrid 0.5s;
+  overflow: hidden;
+}
+
+@keyframes animateGrid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sc-grid-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sc-grid h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sc-grid-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
